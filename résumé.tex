@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Alex Ray (ajray AT ncsu DOT edu)
+%    Homepage: http://machinaut.blogdns.net/wordpress/
+%
+% Typeset résumé in XeTeX (2010) based off the LaTeX resume class
+%
+% Repository: http://github.com/ajray/XeTeX-Resume
+%
+% License: Creative Commons
+% Attribution-Share Alike 3.0 United States
+% 
+% You are free:
+% 
+% to Share — to copy, distribute and transmit the work
+% to Remix — to adapt the work
+%
+% Under the following conditions:
+% 
+% Attribution — You must attribute the work in the manner specified by the
+%    author or licensor (but not in any way that suggests that they endorse
+%    you or your use of the work).
+% Share Alike — If you alter, transform, or build upon this work, you may
+%    distribute the resulting work only under the same, similar or a compatible
+%    license.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% using résumé.cls, a modification of the old LaTeX res(ume) class
+%\documentclass[margin]{résumé}
+%\setlength{\textwidth}{5.1in} % set width of text portion
+\documentclass[10pt,letterpaper,notitlepage,onecolumn,oneside]{article}
+
+% Fonts
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+\setmonofont[Scale=0.8]{Monaco}
+\setsansfont[Scale=0.9]{Optima Regular}
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+\begin{document}
+%title block
+{\centering
+{\large \bf Alex Ray}
+\hrule
+foo \\
+bar \\
+}
+
+
+% Center the name over the entire width of resume:
+% \moveleft.5\hoffset\centerline{\large\bf Susan R. Bumpershoot}
+% Draw a horizontal line the whole width of resume:
+% \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+% \moveleft.5\hoffset\centerline{1985 Storm Lane}
+% \moveleft.5\hoffset\centerline{Troy, NY 12180}
+% \moveleft.5\hoffset\centerline{(518) 273-0014 or (518) 272-6666}
+
+
+
+ 
+%\section{OBJECTIVE}  A position in the field of computers with special 
+%                interests in business applications programming, 
+%                information processing, and management systems. 
+% 
+%
+%\section{EDUCATION} {\sl Bachelor of Science,} Interdisciplinary Science \\
+%                      % \sl will be bold italic in New Century Schoolbook (or
+%	              % any postscript font) and just slanted in
+%		      %	Computer Modern (default) font
+%                Rensselaer Polytechnic Institute, Troy, NY, 
+%                expected December 1990 \\
+%                Concentration: Computer Science \\
+%                Minor: Management 
+% 
+% 
+%\section{COMPUTER \\ SKILLS} {\sl Languages \& Software:} COBOL, IFPS, Focus, 
+%         Megacalc, Pascal, Modula2, C, APL, SNOBOL, 
+%                FORTRAN, LISP, SPIRES, BASIC, VSPC Autotab, 
+%                IBM 370 Assembler, Lotus 1-2-3. \\
+%                {\sl Operating Systems:} MTS, TSO, Unix. 
+% 
+%\section{EXPERIENCE} {\sl Business Applications Programmer} \hfill Fall 1990 \\
+%                Allied-Signal Bendix Friction Materials Division, 
+%                Financial Planning Department, Latham, NY 
+%                 \begin{itemize}  \itemsep -2pt %reduce space between items
+%                 \item Developed four ``user friendly" forecasting 
+%                    systems each of which produces 18 to 139 
+%                    individual reports. 
+%                \item   Developed or improved almost all IFPS 
+%                    programs used for financial reports. 
+%                \end{itemize}
+% 
+%                {\sl Research Programmer} \hfill            Summer 1990 \\
+%                Psychology Department, Rensselaer Polytechnic 
+%                Institute 
+%                 \begin{itemize}  \itemsep -2pt %reduce space between items
+%                 \item Performed computer aided statistical analysis 
+%                    of data. 
+%                 \end{itemize} 
+%                {\sl Assistant Manager} \hfill        Summers 1988-89 \\
+%                Thunder Restaurant, Canton, CT
+%                  \begin{itemize}
+%                   \item Recognized need for, developed, and wrote 
+%                    employee training manual. Performed various 
+%                    duties including cooking, employee training, 
+%                    ordering, and inventory control. 
+%                   \end{itemize} 
+% 
+%\section{COMMUNITY \\ SERVICE}  Organized and directed the 1988 and 1989 Grand 
+%                 Marshall Week \newline ``Basketball Marathon.'' A 24 hour 
+%                charity event to benefit the Troy Boys Club. Over 
+%                250 people participated each year. 
+%
+%\section{EXTRA-CURRICULAR \\ ACTIVITIES}             
+%            Elected {\it House Manager}, Rho Phi Sorority \\
+%            Elected {\it Sports Chairman} \\
+%            Attended Krannet Leadership Conference \\
+%                Headed delegation to Rho Phi Congress \\
+%                Junior varsity basketball team \\
+%                Participant, seven intramural athletic teams 
+% 
+%
+%\end{resume}
+\end{document}
+
+
+
+
