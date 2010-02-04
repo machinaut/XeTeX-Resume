@@ -1,0 +1,149 @@
+% Latex Resume Template
+% Created by Ben Berry (hobershort@gmail.com)
+% 2 Feb 2010
+% Edited by Alex Ray (ajray@ncsu.edu)
+% 3 Feb 2010 (thanks Ben :-)
+
+% Okay, notes... 
+% So this whole thing is a hack I put together while I was learning LaTeX, so I know it sucks.
+% The doc's margins are set a few lines down from here, on that one that says \usepackage...{geometry}.
+% Aside from that, I set \leftskip to be 4em, which is what makes almost all the text moved over.
+% The \heading and \subheading items reduce the \leftskip by 4em and 2em, respectively. 
+% For those of you who paid attention in math class, this means \heading is "indented" 0em,
+% \subhead 2em, and everything else 4em
+
+% NOTABLE HACKS
+% Okay, to get the tabular to line up properly, I tweaked the \leftskip some more until the table lined up.
+% And to get the drop-indent effect on 'Other Work Experience' I used a \parindent of -2em.
+% Actually, that may be the legit way to do that. I dunno. You find out and let me know.
+% Oh, yeah, I used a ton of \vspace{}s because, damn. Gotta have that whitespace. Stack them tabs.
+
+% SUPERBIG HACK
+% The \heading command is FUBAR because of the way LaTeX does optional parameters.
+% You can give the heading text to be put in big bold letters, and some other text 
+% to be put in italics ON THE SAME LINE, which is handy if you're me.
+% Usage: \heading[italicised text]{Bolded text}
+% Result: <b>Bolded Text</b> <i>italicised text</i>
+% Notice how the arguments are reversed? Fuckin' rad. LaTeX should have my babies. Get me out of here.
+% By the same token:
+% Usage: \subhead{Bolded text}
+% If you need a Result: for this one, go back to Digg (oh zing!). Actually, I couldn't care less about the whole Digg vs Reddit thing, but it's like making fun of skaters or emo kids about who came first. Save your wrists, cut your hair.
+
+
+\documentclass[10pt]{article}
+
+\usepackage[top=5em, bottom=5em, left=0.5in, right=.5in]{geometry}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\lhead{\href{mailto:ajray@ncsu.edu}{ajray@ncsu.edu}}
+\chead{ \textbf{\LARGE Alex Ray}}
+\rhead{ \today}
+
+\lfoot{ 3905 Inland Ct., Raleigh, NC 27606}
+\cfoot{ }
+\rfoot{ 919-210-0338}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%begin \heading
+\newcommand{\heading}[2][]{
+
+{\addtolength{\leftskip}{-4em}
+
+\noindent\textbf{\large #2} \textit{#1}
+
+}
+
+}
+%end \heading
+
+%begin \subhead
+
+\newcommand{\subhead}[1]{
+
+{\addtolength{\leftskip}{-2em}
+
+\textbf{#1}
+
+}
+
+}
+%end \subhead
+
+\begin{document}
+ 
+\setlength{\parindent}{0in}
+\setlength{\leftskip}{4em}
+\heading{\sc Objective}
+A challenging summer internship at a company on the cutting edge of new technology where I can bring passion into solving problems that will improve peoples' lives.
+\vspace{.8em}
+\heading{\sc Education}{}
+\subhead{Bachelor of Computer Engineering, Bachelor of Textile Engineering (dual major)}
+North Carolina State University, Graduating December 2011 \\
+4.0/4.0 Major/Cumulative GPA
+\vspace{.8em}
+\heading{\sc Research/Professional Experience}
+\subhead{Open Source Software Developer, {\em Google}, Summer 2009}
+Google Summer of Code 2009, Minix Project (Open Source Microkernel Operating System)\\
+Worked remotely from Raleigh, NC
+\subhead{Responsibilities}
+Integrate hardware drivers for on-processor performance registers\\
+Develop unit tests and integrate them into the existing unit test framework\\
+Support the software community and other developers throughout the project
+\vspace{.8em}
+\subhead{Computational Software Developer, {\em Optoelectronics \& Lightwave Engineering Group}, 2 Semesters}
+OLEG Research Group, College of Engineering, North Carolina State University \\
+National Science Foundation funded Research Project
+\subhead{Responsibilities}
+Develop modelling software to simulate and verify experimental findings \\
+Optimize computational software runtime using multithreading, multiprocessing, and GPU computing \\
+Deliver software for Windows, Mac, and Linux/Unix operating systems, as well as source code
+\vspace{.8em}
+\subhead{Computational Lab Assistant, {\em Computational Chemistry Research Group}, 2 Years} 
+Dr. Pasquinelli's Research Group, College of Textiles, North Carolina State University
+\subhead{Responsibilities}
+Maintain and update Linux computational lab machines' hardware and software \\
+Build, install, test and debug new software, contributing back to the community where applicable \\
+Develop utility programs and scripts to aid lab members and automate/manage simulations
+\vspace{.8em}
+\heading[(Most to least proficient)]{\sc Skills}
+{\addtolength{\leftskip}{-.2em}
+\begin{tabular}{ l l }
+\textbf{Operating Systems:} 				& Linux/Unix, Windows XP, Windows Vista/7, Mac OSX, z/OS\\
+\textbf{Programming Languages:} 	        & C, Assembly, Verilog, Go, VBA, Java\\
+\textbf{Parallelization Languages:}         & OpenMP, PThreads, MPI \\
+\textbf{Scripting Languages:}               & Python, Bash, SQL, Tcsh, Vim \\
+\textbf{Markup Languages:} 					& \rmfamily\LaTeX, HTML \\
+\textbf{Version Control Systems:}		    & Subversion, Git\\
+\end{tabular}
+}%
+\vspace{.8em}
+\heading{\sc Other Experience}
+{\setlength{\parindent}{-2em}
+\textbf{Research Assistant}, Department of Horticulture, Summer 2006 \\ 
+Set up test plots for Herbicide Efficacy Research; Repair mechanical tools in the field.
+
+\textbf{Musical Instrument Repair Apprentice}, Raleigh Music Center, Summer 2004/05 \\
+Disassemble, reassemble and clean instruments.  Perform metalwork repairs and mending.
+}
+\vspace{.8em}
+\subhead{Student Associations}
+Active member and one-term treasurer of the \textbf{NCSU Linux Users' Group}.\\
+Software Team member and two-term secretary of the \textbf{NCSU Aerial Robotics Club}.\\
+Performing member in the {\bf NCSU Jazz Ensemble I} and the {\bf NCSU Marching Band}.
+\vspace{.8em}
+\heading{\sc Relevant Projects}
+\subhead{Robust, scalable network and infrastructure for Aerial Robotics Competitions}
+Network allows multiple computers to be receiving live telemetry and imagery from an Aerial Robot \\
+Distributes processing tasks to individual machines; data is shared in a SQL database and a Samba share \\
+Wireless link is constantly maintained with the aircraft and commands are sent from the ground
+
+\subhead{Embedded systems programming - Arduino}
+Personal embedded projects programming AVR architecture microcontrollers for miscellaneous tasks \\
+e.g. animate LED displays, control servomotors, play sounds, read analog devices
+
+\end{document}
