@@ -1,0 +1,212 @@
+ % ----------------------------------------------------------------------------------------%
+%	Created by Alessandro with TeXShop						%
+%	---->	May 27, 2009										%
+%	Compiled with XeLaTeX, on Mac OS X						%
+%	Licensed under the Creative Commons Attribution 3.0 Unported	%
+%	Share, change, spread, and have fun!						%
+%	http://creativecommons.org/licenses/by/3.0/					%
+%	You can find more at http://aleplasmati.comuv.com				%
+% ----------------------------------------------------------------------------------------%
+
+\documentclass[10pt]{article}
+
+%Load Graphics and Colours
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{wrapfig}
+\definecolor{linkcolour}{HTML}{2b2b2b}
+\definecolor{text1}{HTML}{2B2B2B}			
+\definecolor{headings}{HTML}{CC3300} 	
+\definecolor{backgroundColor}{HTML}{CC3300} 	
+
+%!TEX encoding =  UTF-16
+
+%margins
+\usepackage[hmargin=1.25cm, vmargin=1cm]{geometry}    
+\linespread{1.2}
+\usepackage{setspace}
+
+
+%Styling Itemizations
+\usepackage{enumitem}
+\renewcommand{\labelitemi}{\symbol{"E052}}
+
+%Fonts and Tweaks for XeLaTeX
+\font\headers="Helvetica Neue Bold:letterspace=5" at 20pt
+\font\SectionHeaders="Helvetica Neue Bold:letterspace=5" at 14pt
+%\font\headers="Qlassik Bold:letterspace=5" at 22pt
+%\font\SectionHeaders="Qlassik Bold:letterspace=5" at 14pt
+\font\Career="Calluna:color=2b2b2b" at 13pt
+\font\Text="Calluna:color=2b2b2b" at 11pt
+\font\TextAlt="Calluna:color=CC3300" at 11pt
+\font\TextSC="Calluna:+smcp, color=2b2b2b" at 11pt
+\font\slash="Calluna:+zero, color=2b2b2b" at 40pt
+\font\slashAlt="Calluna:+zero, color=CC3300" at 40pt
+\font\ContactHeaders="Calluna" at 170 pt
+\font\trick="Calluna:color=FFFFFF" at 0.1 pt
+
+%Setup hyperref package, and colours for links, text and headings
+\usepackage{hyperref}		
+\hypersetup{	colorlinks,breaklinks,
+			urlcolor=linkcolour, 
+			linkcolor=linkcolour}
+
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\usepackage{titlesec}
+\titleformat{\section}
+	{\SectionHeaders\raggedright}{}{0em}{}
+
+\titlespacing{\section}{0pt}{0pt}{5pt}
+\thispagestyle{empty}
+
+\tikzset{background/.style={fill=backgroundColor}}
+\tikzset{background grid/.style = {thick, draw  = red, step = .5cm}}
+%Thumbnail for the Portfolio
+\newcommand{%
+	\thumbnail}[2]{
+		\raggedleft\hfill{\href{#1}
+			{\trick \raisebox{-3pt}{.}
+				\fbox{
+			\includegraphics[scale=0.6]{#2}}
+			\raisebox{70pt}{.}}}
+			}
+%Social ICONS
+\newcommand{\icons}[2]{
+		{\href{#1}
+		{\trick \raisebox{-1pt}{.}
+			\raisebox{-4pt}{
+			\includegraphics{#2}}
+		\raisebox{10pt}{.}}}
+		}
+
+%BEGIN DOCUMENT		
+\begin{document}
+
+%BORDER
+\begin{tikzpicture}[remember picture, overlay]
+\draw [style=background, xshift=-2.5cm, yshift=2cm, very thin] (0,-290mm) rectangle (20mm, 0mm);
+\end{tikzpicture}
+
+% TITLE
+
+{\centering{\headers LEO TOLSTOY}\\[25pt]\par}
+
+%{\color{white} \hrule} %does this rule really change anything?
+
+\parbox{0.8\textwidth}{ %START of left-hand side minipage
+
+	\vspace{0pt}	%trick
+	
+% <<<< NEW SECTION >>>>	
+\section{CAREER OBJECTIVE}
+{\Career 
+
+\begin{wrapfigure}{L}{15mm}
+\vspace{-10pt}
+\includegraphics[scale = 0.5]{moleskine.png}
+\end{wrapfigure}
+
+
+\begin{spacing}{1.4}\Career
+Web design is the skill of creating presentations of content (usually hypertext or hypermedia) that is delivered to an end-user through the World Wide Web, by way of a Web browser or other Web-enabled software like Internet television clients, blogging clients and RSS readers.
+\end{spacing}
+
+\raggedleft\raisebox{5pt}{\rule{11cm}{1pt}}
+
+}
+\vspace{10pt}
+}
+
+\begin{minipage}[t]{0.65\textwidth}
+\section{EXPERIENCE}
+\vspace{0pt}
+%	%WORK EXPERIENCE -1-
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, topsep=5pt] \Text\raggedright
+	\item By its very nature, web design is conflicted, involving rigid technical conformance and personal creative balance. Rapid technological change complicates acquiring and deploying suitable resources to maintain web presence.
+
+	\item Purposing web design is a complex, but essential ongoing activity. Before creating and uploading a website, it is important to take the time to plan exactly what is needed in the website. Thoroughly considering the audience or target market, as well as defining the purpose and deciding what content will be developed, are extremely important.
+
+	\item Web design is similar (in a very simplistic way) to traditional print publishing. Every website is an information display container, just as a book ; and every web page is like the page in a book. However, web design uses a framework based on digital code and display technology to construct and maintain an environment to distribute information in multiple formats. Taken to its fullest potential, web design is undoubtedly the most sophisticated and increasingly complex method to support communication in today's world.
+
+\end{itemize}
+\vspace{10pt}
+\section{COMPUTER SKILLS}
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, topsep=5pt]\Text
+\item Markup languages (such as {\TextSC html}, {\TextSC xHtml} and {\TextSC xml});
+\item Style sheet languages (such as {\TextSC css} and {\TextSC xsl});
+\item Client-side scripting (such as JavaScript and VBScript);
+\item Server-side scripting (such as {\TextSC php} and {\TextSC asp});
+\item Database technologies (such as MySQL and PostgreSQL);
+\item Multimedia technologies (such as Flash and Silverlight).
+\end{itemize}
+\end{minipage} %END of left-hand side minipage
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+\titleformat{\section}
+	{\SectionHeaders\raggedleft}{}{0em}{}
+
+	\section{PORTFOLIO}
+
+	\thumbnail	{http://new.myfonts.com/fonts/exljbris/calluna/}
+				{28444.jpg}
+				
+	\thumbnail	{http://new.myfonts.com/fonts/canadatype/informa-pro/}
+				{informa-pro.png}	
+				
+	\thumbnail	{http://new.myfonts.com/fonts/radomir-tinkov/usumaru/}
+				{usumaru.png}
+				
+	\thumbnail	{http://new.myfonts.com/fonts/canadatype/hortensia/}
+				{hortensia.png}
+				
+	\thumbnail	{http://new.myfonts.com/fonts/glc/1906-french-news/}
+				{french-news.png}
+\end{minipage}
+\vspace{30pt}
+\titleformat{\section}
+	{\color{backgroundColor}\centering}{}{0em}{}
+{
+ %START of right-hand side minipage
+
+\par\centering
+\begin{tikzpicture}
+\draw[solid, color=text1, very thin, double, double distance=2pt] (0pt,0pt) -- (11cm,0pt);
+\end{tikzpicture}
+
+\vspace{10pt}
+\centering
+\begin{tikzpicture}[overlay, opacity=0.3,color=text1, xshift=10cm, yshift=-20mm, show background rectangle]
+	\draw node	{\ContactHeaders conta\symbol{"E087}s};
+\end{tikzpicture}
+	\Text 	
+	\begin{minipage}[t]{0.5\textwidth}
+	\end{minipage}
+\hfill\begin{minipage}[t]{0.4\textwidth}
+\begin{tikzpicture}[overlay, opacity=0.8, color=black, xshift=-1.5cm, yshift=4pt]
+\draw node {\slash 2.\slashAlt0};
+\end{tikzpicture}
+\raggedleft
+	\icons{http://twitter.com/Maratonda} {twitter.png} 
+	\icons{http://delicious.com/} 		{delicious.png}
+	\icons{http://www.facebook.com/} 	{facebook.png}
+	\icons{http://www.flickr.com/} 		{flickr.png} 
+	\icons{http://www.last.fm/} 			{lastfm.png} 
+	\icons{http://www.vimeo.com/} 		{vimeo.png} 
+	\icons{http://www.stumbleupon.com/} 	{stumble.png}
+	\icons{http://www.reddit.com/} 		{reddit.png} 
+	\icons{http://www.linkedin.com/}		{linkedin.png} \\
+	
+
+\vspace{15pt}
+\begin{tikzpicture}[overlay, opacity=0.8, xshift=-7.71cm, yshift=-3mm, color=backgroundColor]
+\draw node {\slashAlt 1.\slash 0};
+\end{tikzpicture}
+	{\TextAlt phone}\\ +39 123 456 789\\
+		{\TextAlt email}\\ alessandro.plasmati@gmail.com\\
+	\raggedleft \href{http://cv-templates.info}{\TextAlt http://cv-templates.info}
+	\end{minipage}
+}
+\end{document}  
