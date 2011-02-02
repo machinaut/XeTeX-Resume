@@ -1,0 +1,104 @@
+%-----------------------------------------
+% Michael Wright
+% Resumé
+%
+% URL: http://github.com/mdwrigh2/resume
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{fontspec}
+\moderncvtheme[darkred]{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% Remove % to set to different fonts
+%\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+%\setmonofont[Scale=0.8]{Monaco} 
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+% HEADINGS
+%\usepackage{sectsty} 
+%\usepackage[normalem]{ulem} 
+%\sectionfont{\rmfamily\mdseries\Large} 
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+
+% Personal Inofrmation
+\firstname{Michael}
+\familyname{Wright}
+\address{9500 Kingsford Dr.}{Cary, NC 27518}
+\mobile{(919) 656-4962}
+\email{mdwrigh2@ncsu.edu}
+\homepage{http://www.derefnull.com/about}
+
+\title{Michael Wright's Resume}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+\section{Objective} To further myself as a computer scientist and programmer by participating in the architecture and development of interesting software projects and research.
+
+\section{Education}
+  \cventry{2008-2012 (expected)}{Computer Science \& Mathematics, NCSU}{Raleigh, NC}{}{3.974 Overall GPA}{CSC \& MA Majors GPA: 4.0}
+  \cvline{Relevant Courses:}{Operating Systems, Data Structures, Computer Algebra (Graduate), Compilers (Graduate)}
+%\section{Relevant Courses} 
+%  \cvlistitem{Operating Systems}
+%  \cvlistitem{Data Structures and Algorithms}
+%  \cvlistitem{C and Software Tools}
+\section{Computer Skills} 
+  \cvline{Languages:}{Ruby, C, Python, Java}
+  \cvline{Software:}{Git, Subversion, Apache, MySQL, Capistrano, Mongrel, Monit, Chef, \LaTeX}
+  \cvline{Operating Systems:}{Linux (Primarily Debian-based distributions), OS X, Windows, Xen, VMWare ESXi}
+  \cvline{Development Styles:}{Experienced in both waterfall and agile development methodologies}
+\section{Experience} 
+  \cventry{2010--Current}{Research Assistant}{Dr. Jiang, NCSU}{Raleigh, NC}{}{
+    %{Research Assistant} \hfill Summer 2010 - Current \\
+    %North Carolina State University
+    %With Dr. Jiang and the Systems Security Group
+    \begin{itemize}% \itemsep -2pt % reduce space between items
+      \item Developed a framework to interpose advertisement's interaction with webpages.
+      \item Gave presentations on papers and research proposals to the Systems Security group.
+    \end{itemize}}
+  \cventry{2008--2010}{Jr. Developer/IT Intern}{Futures, Inc.}{Durham, NC}{}{
+    %{Junior Developer/IT Intern} \hfill Summer 2008 - Spring 2010 \\
+		%Futures Inc., Durham, NC
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
+        \item Aided in the design, and provided the implementation and support of a large scale (10,000+ initial users), Xen-virtualized server environment housing a rich internet web application.
+	      \item Gained software development experience via the completion of individual projects.
+        \item Aided in the transfer from rented hardware running Xen instances, to
+              Engine Yard's Amazon EC2-based cloud computing service.
+    \end{itemize}}
+  \cventry{Summer 2007}{Network Cabling Apprentice}{Trident Technology Solutions}{Raleigh, NC}{}{
+    %{Network Cabling Apprentice} \hfill            Summer 2007 \\
+    %Trident Technology Solutions
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
+      \item Built server racks, mounted cable trays, and ran network cables within newly built data centers.
+    \end{itemize} }
+    
+\section{Extra}
+  \cvlistitem{Volunteer for CarolinaCon, a regional technology conference from 2005 - 2007}
+  \cvlistitem{Dean's List every semester}
+  \cvlistitem{Active Member of the NCSU Linux User Group}
+  \cvlistitem{Contributor to open source projects - see http://github.com/mdwrigh2}
+\end{document}
