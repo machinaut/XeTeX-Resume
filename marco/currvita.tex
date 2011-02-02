@@ -1,0 +1,104 @@
+\documentclass{scrartcl}	% classe article di KOMA
+\reversemarginpar
+\newcommand{\MarginDate}[1]{\marginpar{\raggedleft\itshape\small#1}}
+%\usepackage[latin1]{inputenc}	% la codifica di input
+%\usepackage[T1]{fontenc}	% la codifica dei font
+\usepackage[LabelsAligned]{currvita}	% un buon pacchetto per CV
+\usepackage[nochapters]{classicthesis} % stile ClassicThesis
+\usepackage{url}	% per gli indirizzi Internet
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
+\renewcommand{\cvlistheadingfont}{\large}
+\renewcommand{\cvlabelfont}{\qquad}
+%Setup hyperref package, and colours for links, text and headings
+\usepackage{hyperref}		
+\hypersetup{	colorlinks,breaklinks,
+			urlcolor=Maroon, 
+			linkcolor=Maroon}
+\usepackage{eurosym}
+\newlength{\datebox}\settowidth{\datebox}{Summer 2007}
+
+\newcommand{\NewWorkExperience}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\textit{#1}}\hspace{1.5em} #2 #3%
+\vspace{0.5em}}
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize}
+\newcommand{\Sep}{\vspace{2em}}
+\begin{document}
+\thispagestyle{empty}
+\begin{cv}{\spacedallcaps{Marco Tullio Cicerone}}
+\vspace{1.5em}
+
+\spacedlowsmallcaps{Personal Data}
+\vspace{0.5em}
+
+\NewWorkExperience{}{\textit{Born in Matera,}}{13 November 1920}
+
+\NewWorkExperience{email}{\href{mailto:name.surname@gmail.com}{name.surname@gmail.com}}{}
+
+\NewWorkExperience{phone}{+123 456 7890}{}
+\vspace{1.5em}
+
+\noindent\spacedlowsmallcaps{Work Experience}
+\vspace{0.5em}
+
+\NewWorkExperience{Current}{Trader at Enoi spa,}{Milan}
+
+\Description{Provided analysis of spreads, \MarginDate{Physical Natural Gas Trading}
+in particular time and location spreads, with emphasis on trading 
+opportunities on the curve, also taking into 
+account the availability of storage facilities. Became familiar with logistic implications of physical gas trading and developed knowledge of continental virtual hubs for gas exchange.}
+
+\Sep
+
+\NewWorkExperience{2008--2009}{Lehman Brothers,}{London}
+
+\Description{Developed spreadsheets for risk analysis\MarginDate{Commodities Exotics Trading} on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping}
+
+\Sep
+
+\NewWorkExperience{Summer 2007}{Lehman Brothers,}{London}
+
+\Description{Received pre-placed offer from the Exotics Trading Desk as a \MarginDate{Summer Internship} result of very positive review. 
+Rated ``truly distinctive'' for Analytical Skills and Teamwork}
+\vspace{1.5em}
+
+\spacedlowsmallcaps{Education}
+\vspace{0.5em}
+
+\NewWorkExperience{July 2008}{Bocconi University,}{Milan}
+
+\Description{110/110 \textit{summa cum laude}\ \ $\cdotp$\ \  Major: Quantitative Finance\MarginDate{Master of Science in Finance}\newline Thesis: ``Sublinear and Locally Sublinear Prices'' \newline Advisor: Prof.~Erio \textsc{Castagnoli}\ \ $\cdotp$\ \  Gpa: 28.61/30}
+
+\Sep
+
+\NewWorkExperience{July 2006}{Bocconi University,}{Milan}
+
+\Description{110/110 \textit{summa cum laude}\ \ $\cdotp$\ \  Major: Quantitative Finance\MarginDate{Some Other Education}\newline Thesis: ``Sublinear and Locally Sublinear Prices'' \newline Advisor: Prof.~Erio \textsc{Castagnoli}\ \ $\cdotp$\ \  Gpa: 28.61/30}
+\vspace{1.5em}
+
+\spacedlowsmallcaps{Additional Information}
+\vspace{0.5em}
+
+\Description{Sept. 2006	Scholarship for graduate students with an outstanding curriculum (\euro\ 30,000) }
+
+\vspace{1em}
+
+\Description{June 2006	Gmat\textregistered: 730 (q:50;v:39) \MarginDate{Gmat}96\textsuperscript{th} percentile; \newline\textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)}
+
+\vspace{1em}
+\newlength{\langbox}
+\settowidth{\langbox}{English}
+\Description{\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \  \ Fluent}
+
+\vspace{0.5em}
+
+\Description{\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \  \ Fluent}
+\MarginDate{Languages}
+\vspace{0.5em}
+
+\Description{\parbox{\langbox}{\textsc{Italian}}\ \ $\cdotp$\ \ \  Mother Tongue}
+\vspace{1em}
+
+\Description{\LaTeX\ \ $\cdotp$\ \ Typography\ \ $\cdotp$\ \  Programming\ \ $\cdotp$\ \  Other\MarginDate{Interests}}
+\enlargethispage{\baselineskip}
+\end{cv}
+\end{document}
