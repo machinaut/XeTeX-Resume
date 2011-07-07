@@ -1,0 +1,32 @@
+supercomputing
+coreboot
+plan 9 hacker
+clustering
+
+ajray's exp:
+grub2
+initrd/initramfs/dracut
+linux kernel
+fpgas?
+
+ron:
+current research?
+recent publications?
+google scholar
+diskless booting
+http://sandia.gov/careers/stu-interns.html
+
+bitbucket:
+gproc = bproc + xcpu
+
+letter matters:
+hit on that i meet all req's
+internship/coop full time in the fall
+sorry for the late notice
+offer TODO for project (figure out which)
+
+topic interest areas
+
+Ron Minnich has been working in HPC for much longer than he ever expected to, which explains the grey hairs in his beard. He has built software and HPC systems based on FPGAs, PIMs, distributed computers (co-authoring a famous C&W song: "I was Grid before Grid was cool"), and clusters. He has been working with Unix innards longer than some of his co-workers have been alive, which fact causes him to wonder if he should get in another line of work. 
+
+

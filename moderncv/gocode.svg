@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="153"
+   height="81"
+   id="svg3202"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="New document 2">
+  <defs
+     id="defs3204" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="72.523656"
+     inkscape:cy="36.323246"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="876"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3207">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-971.35412)">
+    <g
+       id="g4163"
+       transform="matrix(1.2569963,0,0,-1.2569963,-10.553636,1959.6097)">
+      <rect
+         ry="0"
+         transform="scale(1,-1)"
+         y="-785.58942"
+         x="8.9349127"
+         height="63.047009"
+         width="120.64075"
+         id="rect3373"
+         style="opacity:0.41015625;fill:#4080bf;fill-opacity:0.3103448;stroke:#000000;stroke-width:1.0779922;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         transform="scale(1,-1)"
+         sodipodi:linespacing="125%"
+         id="text3353"
+         y="-776.60956"
+         x="12.963117"
+         style="font-size:32.65625px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.41015625;fill:#000000;fill-opacity:1;stroke:none;font-family:Calluna;-inkscape-font-specification:Calluna"
+         xml:space="preserve"><tspan
+           style="font-size:6.53125px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+           y="-776.60956"
+           x="12.963117"
+           id="tspan3355"
+           sodipodi:role="line">package main</tspan><tspan
+           style="font-size:6.53125px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+           id="tspan3357"
+           y="-768.4455"
+           x="12.963117"
+           sodipodi:role="line" /><tspan
+           style="font-size:6.53125px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+           id="tspan3359"
+           y="-760.28143"
+           x="12.963117"
+           sodipodi:role="line">import &quot;fmt&quot;</tspan><tspan
+           style="font-size:6.53125px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+           id="tspan3361"
+           y="-752.11737"
+           x="12.963117"
+           sodipodi:role="line" /><tspan
+           style="font-size:6.53125px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+           id="tspan3363"
+           y="-743.95331"
+           x="12.963117"
+           sodipodi:role="line">func main() {</tspan><tspan
+           style="font-size:6.53125px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+           id="tspan3365"
+           y="-735.78925"
+           x="12.963117"
+           sodipodi:role="line">        fmt.Println(&quot;Résumé&quot;)</tspan><tspan
+           style="font-size:6.53125px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+           id="tspan3369"
+           y="-727.62518"
+           x="12.963117"
+           sodipodi:role="line">}</tspan></text>
+    </g>
+  </g>
+</svg>

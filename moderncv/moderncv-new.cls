@@ -117,9 +117,9 @@
 
 % page geometry
 \addtolength{\oddsidemargin}{-54pt}
-\addtolength{\textwidth}{109pt}
-\addtolength{\topmargin}{-70pt}
-\addtolength{\textheight}{122pt}
+\addtolength{\textwidth}{120pt}
+\addtolength{\topmargin}{-105pt}
+\addtolength{\textheight}{152pt}
 \addtolength{\marginparsep}{-5pt}
 \addtolength{\marginparwidth}{-10pt}
 
@@ -331,6 +331,7 @@
   \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
  	  \raggedleft\hintfont{} &{\subsectionstyle{#1}}%
   \end{tabular}%
+  \includegraphics{"github.png"}
   \par\nobreak\vskip 0.5ex\@afterheading}% to avoid a pagebreak after the heading
 %  \phantomsection{}% reset the anchor for hyperrefs
 %  \addcontentsline{toc}{chapter}{#1}% does not work, the bookmark is placed at the same level as sections (placed themselves at part level to be visible, as hyperref does not allow sections without parents...)

@@ -1,2 +1,2 @@
 all:
-	xelatex ajray-resume.tex
+	xelatex template.tex
