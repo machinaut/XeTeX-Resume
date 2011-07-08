@@ -13,7 +13,7 @@
 %\moderncvtheme[green]{classic}             % idem
 
 % DOCUMENT LAYOUT
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.85]{geometry}
 \setlength{\hintscolumnwidth}{2cm} % if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
@@ -67,20 +67,61 @@
 \maketitle
 
 \section{Objective}
-A challenging fall internship developing the cutting edge of massively scalable computer systems, %
+A challenging internship developing the cutting edge of massively scalable computer systems, %
 where I can bring passion and expertise into solving problems that will improve peoples' lives. %
-Also: developing on coreboot, Plan 9, or Linux. ☺
+Also: developing on Go, Plan 9, or Linux. % ☺
 
+
+%\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
 
 \section{Education}
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-
-\section{Master thesis}
-\cvline{title}{\emph{Title}}
-\cvline{supervisors}{Supervisors}
-\cvline{description}{\small Short thesis abstract}
-
+  \cventry{2007-2012 (expected)}{BS Computer Engineering \& Textile Engineering, NCSU}{Raleigh, NC}{}{GPA: 3.76}{}
+\section{Computer Skills \& Languages} %
+  \cvline{Programming:}{Go, C, Python, Bash, Tcsh, Assembly, Verilog, SQL, VBA}
+  \cvline{Parallelization:}{OpenMP, PThreads, MPI, OpenCL, Go; LSF, Beowulf}
+  \cvline{Software:}{Git, Subversion, Mercurial; \LaTeX; Linux, OS X, Plan 9; GDB, Vim, Autotools, Make}
+\section{Experience} 
+  \cventry{Summer}{IBM Extreme Blue Internship}{IBM}{Austin, TX}{}{
+    \begin{itemize}% \itemsep -2pt % reduce space between items
+        \item Built 9p/virtio drivers for the GRUB2 bootloader
+        \item Added 9p/virtio support to the Dracut initramfs infrastructure
+        \item Improved 9pfs in the Qemu processor emulator
+        \item Implemented 9p/virtio features in Virtual Machine Manager
+    \end{itemize}}
+  \cventry{Summer}{Cisco Choice Internship}{Cisco}{Morrisville, NC}{}{
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
+        \item Developed tools for debugging of multi-core enterprise-domain routers.
+        \item Built device drivers to monitor performance events on chip for measurement/profiling
+    \end{itemize}}
+  \cventry{Summer}{Google Summer of Code}{Minix Project}{Amsterdam, Netherlands, remote}{}{
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
+        \item Build drivers and kernel support for on-processor performance monitor counters (PMCs)
+        \item Develop tests to measure performance and profile applications
+    \end{itemize}}
+  \cventry{2 Semesters}{Computational Software Developer}{Optoelectronics \& Lightwave Engineering Group}{NCSU}{}{
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
+        \item Developed modelling software to simulate and verify experimental findings
+        \item Optimized runtime using multithreading, multiprocessing and GPU computing on multiple platforms
+    \end{itemize}}
+  \cventry{2 Years}{Computational Lab Assistant}{Computational Chemistry Research Group}{NCSU}{}{
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
+        \item Sysadmin Linux computational lab machines (hardware and software)
+        \item Explored new open source chemistry software packages
+        \item Assissted/supported researchers with utilities \& scripts
+    \end{itemize}}
+\section{Relevant Extracurriculars}
+  \cvlistitem{Officer, Hacker \& Presenter for the NCSU Linux User Group}
+  \cvlistitem{Presenter for Google User Group (Intro to Go \& Why you should learn Go)}
+  \cvlistitem{Lead Software Developer - Aerial Robotics Competition Team}
+  \cvlistitem{Triangle Arduino Hackers - local microcontroller development group}
+  \cvlistitem{Contributor to open source projects - see http://github.com/ajray}
 %\section{Experience}
 %\subsection{Vocational}
 %\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%

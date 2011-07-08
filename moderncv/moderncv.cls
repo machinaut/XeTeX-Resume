@@ -277,7 +277,7 @@
 % recompute all the lengths that depends on the text width
 \newcommand*{\recomputethemelengths}{}
 \newcommand*{\recomputelengths}{%
-  \setlength{\quotewidth}{0.65\textwidth}%
+  \setlength{\quotewidth}{0.75\textwidth}%
   % main lenghts
   \setlength{\maincolumnwidth}{\textwidth}%
   \addtolength{\maincolumnwidth}{-\separatorcolumnwidth}%
