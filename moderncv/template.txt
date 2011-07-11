@@ -1,0 +1,64 @@
+Alex Ray - Resume
+=================
+
+(plaintext version, pdf available at:
+https://github.com/ajray/XeTeX-Resume/blob/master/moderncv/template.pdf?raw=true )
+
+> Circuit bender, kernel hacker, robot builder, urban explorer, trombone playerer.
+
+Objective
+---------
+A challenging internship developing the cutting edge of massively scalable computer 
+systems, where I can bring passion and expertise into solving problems that will improve
+peoples’ lives. Also: developing on Go, Coreboot, Plan 9, or Linux.
+
+Education
+---------
+2007-2012 (expected)
+BS Computer Engineering & Textile Engineering, NCSU, Raleigh, NC, GPA: 3.76.
+
+Computer Skills & Languages
+---------------------------
+Programming: Go, C, Python, Bash, Tcsh, x86 Assembly, Verilog, SQL, VBA
+Parallelization: OpenMP, PThreads, MPI, OpenCL, Go; LSF, Beowulf
+Software: Git, Subversion, Mercurial; LTEX; Linux, OS X, Plan 9; GDB, Vim, Autotools, Make
+
+Experience
+==========
+(Summer) IBM Extreme Blue Internship, IBM, Austin, TX.
+ * Built 9p/virtio drivers for the GRUB2 bootloader
+ * Added 9p/virtio support to the Dracut initramfs infrastructure
+ * Improved 9pfs in the Qemu processor emulator
+ * Implemented 9p/virtio features in Virtual Machine Manager
+
+(Summer) Cisco Choice Internship, Cisco, Morrisville, NC.
+ * Developed tools for debugging of multi-core enterprise-domain routers.
+ * Built device drivers to monitor performance events on chip for measurement/profiling
+
+(Summer) Google Summer of Code, Minix Project, Amsterdam, Netherlands, remote.
+ * Build drivers and kernel support for on-processor performance monitor counters (PMCs)
+ * Develop tests to measure performance and profile applications
+
+(2 Semesters) Computational Software Developer, Optoelectronics & Lightwave Engineering Group, NCSU.
+ * Developed modelling software to simulate and verify experimental findings
+ * Optimized runtime using multithreading, multiprocessing and GPU computing on multiple platforms
+
+(2 Years) Computational Lab Assistant, Computational Chemistry Research Group, NCSU.
+ * Sysadmin Linux computational lab machines (hardware and software)
+ * Explored new open source chemistry software packages
+ * Assissted/supported researchers with utilities & scripts
+
+Relevant Extracurriculars
+-------------------------
+ * Officer, Hacker & Presenter for the NCSU Linux User Group
+ * Presenter for Google User Group (Go Programming Topics)
+ * Lead Software Developer - Aerial Robotics Competition Team
+ * The Triangle Arduino Hackers - local microcontroller development group
+ * Contributor to open source projects - see http://github.com/ajray
+
+Contact
+=======
+Address: 3905 Inland Ct - Raleigh, NC 27606
+Phone: (919) 210-0338
+Email: ajray@ncsu.edu
+Web: http://github.com/ajray
