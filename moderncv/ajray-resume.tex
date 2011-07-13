@@ -1,30 +1,36 @@
-%-----------------------------------------
-% Alex Ray
-% Resumé
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
 %
-% URL: http://github.com/ajray/XeTeX-Resume
-% This document is covered under the Creative Commons Attribution 3.0 Unported License
-%-----------------------------------------
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
 
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+\documentclass[10pt,letterpaper,final]{moderncv}
+\usepackage[pdftex]{hyperref}
+\usepackage{color}
 
-\documentclass[11pt,letterpaper,final]{moderncv}
 \usepackage{fontspec}
-\moderncvtheme[blue]{classic}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}             % idem
 
 % DOCUMENT LAYOUT
-\usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{2cm}
-\AtBeginDocument{\recomputelengths}
-% FONTS
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm} % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
+
+% CHARACTER ENCODING
 \usepackage{xunicode}
 \usepackage{xltxtra}
-\usepackage[utf8]{inputenc}
-\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\usepackage[utf8]{inputenc}                 % replace by the encoding you are using
+\defaultfontfeatures{Mapping=tex-text}      % converts LaTeX specials (``quotes'' --- dashes
+                                            % etc.) to unicode
+% FONTS
 \setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
-\setmonofont[Scale=0.8]{DejaVuSansMono} 
-\setsansfont[Scale=0.9]{OptimaLTStd} 
+\setmonofont[Scale=0.8]{DejaVuSansMono}
+\setsansfont[Scale=0.9]{OptimaLTStd}
 
 % ---- CUSTOM AMPERSAND
 \newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
@@ -32,76 +38,159 @@
 % ---- MARGIN YEARS
 %\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
 
-\setlength{\hintscolumnwidth}{3cm}
-\AtBeginDocument{\recomputelengths}
-% HEADINGS
-%\usepackage{sectsty} 
-%\usepackage[normalem]{ulem} 
-%\sectionfont{\rmfamily\mdseries\Large} 
-%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
-%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
-
-% PDF SETUP
-% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
-
-
-% Personal Inofrmation
+% personal data
 \firstname{Alex}
 \familyname{Ray}
-\address{3905 Inland Ct.} {Raleigh, NC 27606}
-\mobile{\texttt{(919) 210-0338}}
-\email{ajray@ncsu.edu}
+\title{Alex Ray's Resume}                     % optional, remove the line if not wanted
+\address{3905 Inland Ct}{Raleigh, NC 27606}   % optional, remove the line if not wanted
+\mobile{\texttt{(919) 210-0338}}              % optional, remove the line if not wanted
+\phone{\texttt{(919) 809-9064}}               % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ajray@ncsu.edu}                      % optional, remove the line if not wanted
+\homepage{github.com/ajray}                % optional, remove the line if not wanted
+%\extrainfo{Programmer} % optional, remove the line if not wanted
+\photo[64pt]{qrcodeblue}% '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{ Circuit bender, kernel hacker, robot builder, urban explorer, trombone playerer.} %
+    % optional, remove the line if not wanted
 
-\title{Alex Ray's Resume}
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
 
-\nopagenumbers{}
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
 
+\nopagenumbers{}% uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
 \begin{document}
-
 \maketitle
-\section{Objective} 
-A challenging fall internship developing the cutting edge of massively scalable computer systems, %
-where I can bring passion and expertise into solving problems that will improve peoples' lives. %
-Also: developing on coreboot, Plan 9, or Linux.
+
+\section{Objective}
+A challenging position developing the cutting edge of massively scalable computer systems, %
+where I can bring passion and expertise into solving problems that will improve peoples' lives, %
+while pursuing a Masters and PhD in Computer Engineering.
+%Also: developing on Go, Coreboot, Plan 9, or Linux.
+
+
+%\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
 
 \section{Education}
-  \cventry{2007-2012 (expected)}{Computer Engineering \& Textile Engineering, NCSU}{Raleigh, NC}{}{GPA: 3.7}{}
+  \cventry{2007-2012 (expected)}{BS Computer Engineering \& Textile Engineering, NCSU}{Raleigh, NC}{}{GPA: 3.76}{}
 \section{Computer Skills \& Languages} %
-  \cvline{Programming:}{Go, C, Python, Bash, Tcsh, Assembly, Verilog, SQL, VBA}
+  \cvline{Programming:}{Go, C, Python, Bash, Tcsh, x86 Assembly, Verilog, SQL, VBA}
   \cvline{Parallelization:}{OpenMP, PThreads, MPI, OpenCL, Go; LSF, Beowulf}
   \cvline{Software:}{Git, Subversion, Mercurial; \LaTeX; Linux, OS X, Plan 9; GDB, Vim, Autotools, Make}
 \section{Experience} 
-  \cventry{1 Semester}{Teaching Assistant-Principles of Electrical Engineering}{Dr. Masnari}{NCSU}{}{
+  \cventry{Summer}{IBM Extreme Blue Internship}{IBM}{Austin, TX}{}{
     \begin{itemize}% \itemsep -2pt % reduce space between items
-      \item Assisted students with homework and example problems \& Provided supplemental instructional support
+        \item Built 9p/virtio drivers for the {\color{blue}\href{http://www.gnu.org/software/grub/index.html}{GRUB2}} bootloader
+        \item Added 9p/virtio support to the {\color{blue}\href{http://fedoraproject.org/wiki/Dracut}{Dracut}} initramfs infrastructure
+        \item Improved 9pfs in the {\color{blue}\href{http://wiki.qemu.org/Main_Page}{Qemu}} processor emulator
+        \item Implemented 9p/virtio features in {\color{blue}\href{http://virt-manager.et.redhat.com/}{Virtual Machine Manager}}
     \end{itemize}}
-  \cventry{1 Summer}{Cisco Choice Internship}{Cisco}{Morrisville, NC}{}{
+  \cventry{Summer}{Cisco Choice Internship}{Cisco}{Morrisville, NC}{}{
     \begin{itemize}%  \itemsep -2pt %reduce space between items
-        \item Developed low-level tools to aid in the debugging of enterprise-domain routers.
-        \item Implemented device drivers to monitor performance events on chip
+        \item Developed tools for debugging of multi-core enterprise-domain routers.
+        \item Built device drivers to monitor performance events on chip for measurement/profiling
+    \end{itemize}}
+  \cventry{Summer}{Google Summer of Code}{Minix Project}{Amsterdam, Netherlands, remote}{}{
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
+        \item Build drivers and kernel support for on-processor performance monitor counters (PMCs)
+        \item Develop tests to measure performance and profile applications
     \end{itemize}}
   \cventry{2 Semesters}{Computational Software Developer}{Optoelectronics \& Lightwave Engineering Group}{NCSU}{}{
     \begin{itemize}%  \itemsep -2pt %reduce space between items
-        \item National Science Foundation funded Research Project
-        \item Developed modelling software to simulate and verify experimental finding
-        \item Optimize runtime using multithreading, multiprocessing and GPU computing on multiple platforms
-    \end{itemize}}
-  \cventry{1 Summer}{Open Source Developer}{Google Summer of Code}{Amsterdam, Netherlands, remote}{}{
-    \begin{itemize}%  \itemsep -2pt %reduce space between items
-        \item Integrate hardware drivers for on-processor performance registers
-        \item Develop unit tests and integrate them into the existing unit test framework
-        \item Support the software community and other developers throughout the project
+        \item Developed modelling software to simulate and verify experimental findings
+        \item Optimized runtime using multithreading, multiprocessing and GPU computing on multiple platforms
     \end{itemize}}
   \cventry{2 Years}{Computational Lab Assistant}{Computational Chemistry Research Group}{NCSU}{}{
     \begin{itemize}%  \itemsep -2pt %reduce space between items
-        \item Maintain and update Linux computational lab machines' hardware and software
-        \item Build, install, test and debug new software, contributing back to the community      where applicable
-        \item Develop utility programs and scripts to aid lab members and automate/manage          simulations
+        \item Sysadmin Linux computational lab machines (hardware and software)
+        \item Explored new open source chemistry software packages
+        \item Assissted/supported researchers with utilities \& scripts
     \end{itemize}}
 \section{Relevant Extracurriculars}
-  \cvlistitem{Officer, Hacker \& Presenter for the NCSU Linux User Group}
-  \cvlistitem{Lead Software Developer - North Carolina Aerial Robotics Competition Team}
-  \cvlistitem{Triangle Arduino Hackers - local microcontroller development group}
-  \cvlistitem{Contributor to open source projects - see http://github.com/ajray}
-  \cvlistitem{Significant Experience with: Grub2, Dracut/Initramfs/Initrd, Linux Kernel}
+  \cvlistitem{Officer, Hacker \& Presenter for the {\color{blue}\href{http://clubs.ncsu.edu/lug/}{NCSU Linux User Group}}}
+  \cvlistitem{Presenter for Google User Group (Go Programming Topics)}
+  \cvlistitem{Lead Software Developer - {\color{blue}\href{http://art1.mae.ncsu.edu/}{Aerial Robotics Competition Team}}}
+  \cvlistitem{The {\color{blue}\href{http://trianglearduino.com/index.php?title=Triangle_Arduino_Hackers'_Club}{Triangle Arduino Hackers}} - local microcontroller development group}
+  \cvlistitem{Contributor to open source projects - see {\color{blue}\url{http://github.com/ajray}}}
+
 \end{document}
+%\section{Experience}
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+%\section{Languages}
+%\cvlanguage{Language 1}{Skill level}{Comment}
+%\cvlanguage{Language 2}{Skill level}{Comment}
+%\cvlanguage{Language 3}{Skill level}{Comment}
+
+%\section{Computer skills}
+%\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%\section{Interests}
+%\cvline{hobby 1}{\small Description}
+%\cvline{hobby 2}{\small Description}
+%\cvline{hobby 3}{\small Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+
+%% end of file `template_en.tex'.
